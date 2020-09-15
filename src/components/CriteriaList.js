@@ -6,11 +6,11 @@ const Items = styled.div`
   box: border box;
   display: flex;
   position: relative;
-  margin-left: 95px;
+  margin-left: 155px;
   margin-top: -35px;
   z-index: 500;
-  height: 75px;
-  width: 86vw;
+  height: 105px;
+  width: 1140px;
   @media (max-width: 375px) {
     margin-left: 10px;
     width: 95vw;
@@ -34,7 +34,7 @@ const Attribute = styled.div`
   background-color: var(--light-grayish-cyan-bg);
   color: hsl(180, 29%, 50%);
   display: inline-block;
-  margin-top: 3vh;
+  margin-top: 5vh;
   margin-left: 40px;
   margin-right: -20px;
   margin-bottom: 3vh;

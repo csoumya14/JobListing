@@ -32,7 +32,7 @@ const StyledContainer = styled.div`
 `
 const Logo = styled.img`
   margin-left: 20px;
-  margin-top: 25px;
+  margin-top: 35px;
   width: 60px;
   height: 25%;
   @media (max-width: 375px) {
@@ -45,9 +45,18 @@ const MiddleItem = styled.div`
   margin-top: 0px;
   @media (max-width: 375px) {
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
 `
+const MiddleItemFirstLine = styled.div`
+  color: var(--desaturated-dark-cyan);
+  font-size: 13px;
+  margin-top: -72px;
+  @media (max-width: 375px) {
+    margin-top: 5px;
+  }
+`
+
 const SpanNew = styled.span`
   text-transform: uppercase;
   color: white;
@@ -122,7 +131,7 @@ const Line = styled.div`
   visibility: hidden;
   @media (max-width: 375px) {
     visibility: visible;
-    padding-top: 7vh;
+    margin-top: -5vh;
     width: 82vw;
     height: 47px;
     border-bottom: 1px solid var(--dark-grayish-cyan);
@@ -183,17 +192,11 @@ const JobList = ({ jobsToShow, handleClick }) => {
                 <Logo src={jobs.logo} alt="logo" />
               </div>
               <MiddleItem>
-                <div
-                  style={{
-                    color: 'var(--desaturated-dark-cyan)',
-                    fontSize: '13px',
-                    marginTop: '-72px',
-                  }}
-                >
+                <MiddleItemFirstLine>
                   {jobs.company}
                   {jobs.new && <SpanNew>New!</SpanNew>}
                   {jobs.featured && <SpanFeature>Featured</SpanFeature>}
-                </div>
+                </MiddleItemFirstLine>
                 <Position>{jobs.position}</Position>
                 <Table>
                   <HorizontalLists>
