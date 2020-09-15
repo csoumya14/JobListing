@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: hsl(180, 52%, 96%);
+  height: 100%;
 }
 :root {
   --red: #f65959;

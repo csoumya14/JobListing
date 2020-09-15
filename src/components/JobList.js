@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 const StyledItems = styled.div`
   box: border-box;
-  margin-left: 95px;
+  margin-left: 155px;
   margin-top: 20px;
-  height: 110px;
-  width: 86vw;
+  height: 130px;
+  width: 1140px;
   @media (max-width: 375px) {
     margin-left: 10px;
     width: 95vw;
@@ -22,7 +22,7 @@ const StyledItems = styled.div`
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 0px;
+  margin-top: 50px;
   ${StyledItems}:nth-child(-n+2) {
     border-left: solid var(--desaturated-dark-cyan) 3px;
   }
@@ -41,10 +41,8 @@ const Logo = styled.img`
   }
 `
 const MiddleItem = styled.div`
-  display: flex;
-  flex-direction: column;
   margin-left: 95px;
-  margin-top: -9vh;
+  margin-top: 0px;
   @media (max-width: 375px) {
     margin-left: 20px;
     margin-top: 10px;
@@ -83,7 +81,8 @@ const SpanFeature = styled.span`
 
 const Position = styled.div`
   width: 40%;
-  margin-top: 10px;
+  margin-top: 15px;
+
   font-weight: 700;
   margin-bottom: 4px;
   &:hover {
@@ -107,7 +106,7 @@ const Table = styled.div`
 
 const HorizontalLists = styled.div`
   list-style: none;
-  margin-top: 0px;
+  margin-top: 10px;
   font-size: 12px;
   color: var(--dark-grayish-cyan);
 `
@@ -157,7 +156,7 @@ const ButtonTable = styled.div`
   display: table;
 
   float: right;
-  margin-top: -40px;
+  margin-top: -50px;
   margin-right: 50px;
 
   @media (max-width: 375px) {
@@ -184,7 +183,13 @@ const JobList = ({ jobsToShow, handleClick }) => {
                 <Logo src={jobs.logo} alt="logo" />
               </div>
               <MiddleItem>
-                <div style={{ color: 'var(--desaturated-dark-cyan)', fontSize: '13px' }}>
+                <div
+                  style={{
+                    color: 'var(--desaturated-dark-cyan)',
+                    fontSize: '13px',
+                    marginTop: '-72px',
+                  }}
+                >
                   {jobs.company}
                   {jobs.new && <SpanNew>New!</SpanNew>}
                   {jobs.featured && <SpanFeature>Featured</SpanFeature>}
