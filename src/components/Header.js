@@ -4,10 +4,21 @@ import styled from 'styled-components'
 
 const Image = styled.img`
   width: 100%;
-  @media (max-width: 360px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    width: 80rem;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 80rem;
+  }
+
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    width: 80rem;
+  }
+  @media (max-width: 420px) {
     margin-left: -260vw;
     width: 360vw;
   }
+
   background-color: hsl(180, 29%, 50%);
 `
 

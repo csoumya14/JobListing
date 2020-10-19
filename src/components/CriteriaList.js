@@ -11,7 +11,19 @@ const Items = styled.div`
   z-index: 500;
   height: 105px;
   width: 1140px;
-  @media (max-width: 375px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    width: 1010px;
+    margin-left: 75px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 1110px;
+    margin-left: 95px;
+  }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    width: 1110px;
+    margin-left: 95px;
+  }
+  @media (max-width: 420px) {
     margin-left: 10px;
     width: 95vw;
     height: 17vh;
@@ -25,7 +37,7 @@ const Items = styled.div`
 const TopAttribute = styled.div`
   width: 100%;
 
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     width: 70%;
   }
 `
@@ -43,11 +55,30 @@ const Attribute = styled.div`
   font-weight: 700;
   font-size: 12px;
   border-radius: 3px;
-  @media (max-width: 375px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    margin-left: 20px;
+    margin-right: 0px;
+    padding-top: 0.9vh;
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    margin-left: 20px;
+    margin-right: 0px;
+
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+  }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0vh;
+  }
+  @media (max-width: 420px) {
     margin-left: 20px;
     margin-right: 0px;
     padding-top: 1vh;
-
+    margin-top: 2vh;
     margin-bottom: 0vh;
   }
 `
@@ -81,7 +112,20 @@ const CrossButton = styled.button`
   &:hover {
     background-color: black;
   }
-  @media (max-width: 375px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    margin-left: 1vw;
+    width: 3vw;
+    height: 2.5vh;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    margin-left: 1.9vw;
+    width: 5vw;
+  }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    margin-left: 1.9vw;
+    width: 5vw;
+  }
+  @media (max-width: 420px) {
     margin-top: -1vh;
     margin-left: 1.9vw;
     width: 9vw;

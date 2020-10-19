@@ -7,12 +7,25 @@ const StyledItems = styled.div`
   margin-top: 20px;
   height: 130px;
   width: 1140px;
-  @media (max-width: 375px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    width: 1010px;
+    margin-left: 75px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 1110px;
+    margin-left: 95px;
+  }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    width: 1110px;
+    margin-left: 95px;
+  }
+  @media (max-width: 420px) {
     margin-left: 10px;
     width: 95vw;
     height: 250px;
     margin-top: 45px;
   }
+
   font-family: Spartan, sans-serif;
   font-size: 15px;
   border-radius: 4px;
@@ -26,7 +39,7 @@ const StyledContainer = styled.div`
   ${StyledItems}:nth-child(-n+2) {
     border-left: solid var(--desaturated-dark-cyan) 3px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     margin-top: 30px;
   }
 `
@@ -35,7 +48,7 @@ const Logo = styled.img`
   margin-top: 35px;
   width: 60px;
   height: 25%;
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     margin-left: 20px;
     margin-top: -30px;
   }
@@ -43,7 +56,7 @@ const Logo = styled.img`
 const MiddleItem = styled.div`
   margin-left: 95px;
   margin-top: 0px;
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     margin-left: 20px;
     margin-top: 0px;
   }
@@ -52,7 +65,7 @@ const MiddleItemFirstLine = styled.div`
   color: var(--desaturated-dark-cyan);
   font-size: 13px;
   margin-top: -72px;
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     margin-top: 5px;
   }
 `
@@ -67,7 +80,7 @@ const SpanNew = styled.span`
   font-weight: 700;
   margin-right: 0.6rem;
   margin-left: 0.5rem;
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     margin-left: 1.2rem;
     padding: 0.5rem 0.6rem;
   }
@@ -81,7 +94,7 @@ const SpanFeature = styled.span`
   background-color: hsl(230, 29%, 20%);
   border-radius: 24px;
   margin-right: 0.6rem;
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     margin-right: 0.6rem;
     margin-left: 0.2rem;
     padding: 0.5rem 0.6rem;
@@ -98,7 +111,7 @@ const Position = styled.div`
     color: var(--desaturated-dark-cyan);
     cursor: pointer;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     width: 75%;
     margin-top: 20px;
   }
@@ -107,7 +120,7 @@ const Position = styled.div`
 const Table = styled.div`
   display: table;
   width: 40%;
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     width: 90%;
     margin-top: 3vw;
   }
@@ -122,14 +135,14 @@ const HorizontalLists = styled.div`
 const List = styled.div`
   margin-right: 0.8rem;
   display: inline;
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     margin-right: 0.6rem;
   }
 `
 
 const Line = styled.div`
   visibility: hidden;
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     visibility: visible;
     margin-top: -5vh;
     width: 82vw;
@@ -153,7 +166,7 @@ const ListButton = styled.button`
     cursor: pointer;
     color: white;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     padding: 0.5rem;
     margin-left: 2rem;
     margin-top: 1rem;
@@ -168,7 +181,7 @@ const ButtonTable = styled.div`
   margin-top: -50px;
   margin-right: 50px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 420px) {
     margin-top: 10px;
     margin-left: -10px;
     margin-right: 30px;
